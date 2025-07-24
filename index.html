@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder - Poverty Alleviation Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <h1>Pathfinder</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-target="jobs">Job Training</a></li>
+                    <li><a href="#" class="nav-link" data-target="finance">Microfinance</a></li>
+                    <li><a href="#" class="nav-link" data-target="resources">Resources</a></li>
+                    <li><a href="#" class="nav-link" data-target="community">Community</a></li>
+                    <li><a href="#" class="nav-link" data-target="settings">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary" id="signInBtn"><i class="fas fa-user"></i> Sign In</button>
+                <button class="btn btn-primary" id="registerBtn"><i class="fas fa-user-plus"></i> Register</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Breaking Poverty Cycles Together</h2>
+                    <p>Pathfinder connects individuals with vocational training, microfinancing, and community resources to create sustainable pathways out of poverty.</p>
+                    <a href="#" class="btn btn-primary" style="padding: 15px 30px; font-size: 1.2rem;" id="startJourney">
+                        <i class="fas fa-rocket"></i> Start Your Journey
+                    </a>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <h3>700M+</h3>
+                            <p>People live in extreme poverty</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>84M</h3>
+                            <p>Children lack education access</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>62%</h3>
+                            <p>Average income increase</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-cards">
+                        <div class="solution-card">
+                            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070');"></div>
+                            <div class="card-header">
+                                <h3>Vocational Training</h3>
+                            </div>
+                            <div class="card-body">
+                                <i class="fas fa-graduation-cap"></i>
+                                <p>Learn marketable skills with free courses tailored to local job markets. Our training programs have helped 85% of graduates find employment within 6 months.</p>
+                                <a href="https://www.coursera.org/" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                                    <i class="fas fa-external-link-alt"></i> Explore Courses
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card">
+                            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070');"></div>
+                            <div class="card-header">
+                                <h3>Microfinancing</h3>
+                            </div>
+                            <div class="card-body">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <p>Access small business loans at 0% interest with flexible repayment plans. Over 15,000 entrepreneurs have launched successful businesses with our support.</p>
+                                <a href="https://www.kiva.org/" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                                    <i class="fas fa-external-link-alt"></i> Apply Now
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-card">
+                            <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070');"></div>
+                            <div class="card-header">
+                                <h3>Community Support</h3>
+                            </div>
+                            <div class="card-body">
+                                <i class="fas fa-users"></i>
+                                <p>Join local support groups and connect with mentors who have successfully overcome poverty. Our community network spans 35 countries worldwide.</p>
+                                <a href="#" class="btn btn-primary" style="margin-top: 20px;" id="joinCommunity">
+                                    <i class="fas fa-comments"></i> Join Community
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="success-story">
+                        <div class="story-img" style="background-image: url('https://images.unsplash.com/photo-1582212654291-56d0b74231b1?q=80&w=2070');"></div>
+                        <div class="story-content">
+                            <h3>Maria's Journey from Poverty to Prosperity</h3>
+                            <p>"With Pathfinder's support, I received training in sustainable agriculture and a small loan to start my farm. Today, I employ 12 people and provide fresh produce to my entire community."</p>
+                            <p>- Maria Rodriguez, Farmer & Entrepreneur</p>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <i class="fas fa-user-graduate"></i>
+                            <h4>25,000+</h4>
+                            <p>People Trained</p>
+                        </div>
+                        <div class="impact-card">
+                            <i class="fas fa-business-time"></i>
+                            <h4>8,500+</h4>
+                            <p>Businesses Started</p>
+                        </div>
+                        <div class="impact-card">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h4>350+</h4>
+                            <p>Communities Supported</p>
+                        </div>
+                        <div class="impact-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>62% Avg</h4>
+                            <p>Income Increase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs" class="page">
+            <div class="container">
+                <h2 class="section-title">Job Training & Skill Development</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h3><i class="fas fa-laptop-code"></i> Technology Skills</h3>
+                        <p>Learn in-demand tech skills including coding, digital marketing, and IT support.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                        <p>85% employment rate after completion</p>
+                        <div class="resource-links">
+                            <a href="https://www.freecodecamp.org/" target="_blank" class="btn btn-primary" style="margin-top: 15px;">
+                                <i class="fab fa-free-code-camp"></i> Free Coding Courses
+                            </a>
+                            <a href="https://www.udemy.com/" target="_blank" class="btn btn-secondary" style="margin-top: 10px;">
+                                <i class="fas fa-laptop"></i> IT Courses
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h3><i class="fas fa-seedling"></i> Agriculture</h3>
+                        <p>Modern farming techniques, sustainable agriculture, and food processing.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 78%"></div>
+                        </div>
+                        <p>78% income increase for graduates</p>
+                        <div class="resource-links">
+                            <a href="https://www.fao.org/farmer-field-schools/en/" target="_blank" class="btn btn-primary" style="margin-top: 15px;">
+                                <i class="fas fa-tractor"></i> Farming Techniques
+                            </a>
+                            <a href="https://www.agripreneurship.org/" target="_blank" class="btn btn-secondary" style="margin-top: 10px;">
+                                <i class="fas fa-leaf"></i> Sustainable Farming
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h3><i class="fas fa-hands"></i> Craft & Trade</h3>
+                        <p>Carpentry, sewing, pottery, and other marketable craft skills.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                        <p>82% start successful businesses</p>
+                        <div class="resource-links">
+                            <a href="https://www.skillshare.com/" target="_blank" class="btn btn-primary" style="margin-top: 15px;">
+                                <i class="fas fa-paint-brush"></i> Craft Courses
+                            </a>
+                            <a href="https://www.etsy.com/seller-handbook/" target="_blank" class="btn btn-secondary" style="margin-top: 10px;">
+                                <i class="fas fa-store"></i> Selling Crafts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="success-story">
+                    <div class="story-img" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070');"></div>
+                    <div class="story-content">
+                        <h3>From Unemployed to Web Developer</h3>
+                        <p>"After losing my job, I joined Pathfinder's coding bootcamp. Six months later, I landed a job as a junior developer. This program changed my life and my family's future."</p>
+                        <p>- Jamal Wilson, Web Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="finance" class="page">
+            <div class="container">
+                <h2 class="section-title">Microfinance Solutions</h2>
+                <div class="finance-container">
+                    <div class="calculator">
+                        <h3><i class="fas fa-calculator"></i> Loan Calculator</h3>
+                        <div class="form-group">
+                            <label for="loanAmount">Loan Amount ($)</label>
+                            <input type="range" id="loanAmount" min="100" max="5000" value="1000">
+                            <div class="slider-container">
+                                <span id="amountValue">$1000</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="repaymentPeriod">Repayment Period (months)</label>
+                            <input type="range" id="repaymentPeriod" min="3" max="24" value="12">
+                            <div class="slider-container">
+                                <span id="periodValue">12 months</span>
+                            </div>
+                        </div>
+                        
+                        <div class="result">
+                            <h4>Your Loan Details:</h4>
+                            <p>Monthly Payment: <span id="monthlyPayment">$83.33</span></p>
+                            <p>Total Repayment: <span id="totalRepayment">$1000.00</span></p>
+                            <p>Interest Rate: 0%</p>
+                        </div>
+                        
+                        <a href="https://www.accion.org/" target="_blank" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
+                            <i class="fas fa-file-contract"></i> Apply for Loan
+                        </a>
+                    </div>
+                    
+                    <div class="vsla-locator">
+                        <h3><i class="fas fa-map-marker-alt"></i> Find Village Savings Groups</h3>
+                        <p>Join a local Village Savings and Loan Association (VSLA) to save money and access small loans within your community.</p>
+                        
+                        <div class="form-group">
+                            <label for="location">Your Location</label>
+                            <input type="text" id="location" placeholder="Enter your city or region">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="distance">Search Radius</label>
+                            <select id="distance" class="language-select">
+                                <option>5 km</option>
+                                <option selected>10 km</option>
+                                <option>25 km</option>
+                                <option>50 km</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn btn-primary" style="width: 100%;" id="findGroups">
+                            <i class="fas fa-search"></i> Find Groups Nearby
+                        </button>
+                        
+                        <div class="map-container">
+                            <div class="map-placeholder">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <h3>Find VSLA Groups Near You</h3>
+                                <p>Enter your location and click "Find Groups Nearby" to see available Village Savings and Loan Associations in your area</p>
+                            </div>
+                        </div>
+                        
+                        <div class="result" style="margin-top: 20px; background: var(--primary);">
+                            <h4>Why Join a VSLA?</h4>
+                            <p>Village Savings Groups have helped over 10 million people worldwide lift themselves out of poverty through community-based savings and lending.</p>
+                            <a href="https://carevslafrica.org/" target="_blank" class="btn btn-secondary" style="margin-top: 10px;">
+                                <i class="fas fa-info-circle"></i> Learn More About VSLAs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="success-story">
+                    <div class="story-img" style="background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974');"></div>
+                    <div class="story-content">
+                        <h3>Small Loan, Big Impact</h3>
+                        <p>"With a $200 loan from Pathfinder, I bought a sewing machine. Today, I run a clothing business with 8 employees. That small investment transformed my life and my community."</p>
+                        <p>- Fatima Ndiaye, Fashion Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resources" class="page">
+            <div class="container">
+                <h2 class="section-title">Essential Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3><i class="fas fa-utensils"></i> Food Assistance</h3>
+                        </div>
+                        <div class="resource-body">
+                            <ul>
+                                <li>
+                                    <a href="https://www.feedingamerica.org/" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Feeding America
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.foodpantries.org/" target="_blank">
+                                        <i class="fas fa-search-location"></i> Food Pantry Locator
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.snap-step1.usda.gov/fns/" target="_blank">
+                                        <i class="fas fa-file-alt"></i> SNAP Benefits Application
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.wfp.org/" target="_blank">
+                                        <i class="fas fa-globe-americas"></i> World Food Programme
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3><i class="fas fa-home"></i> Housing Support</h3>
+                        </div>
+                        <div class="resource-body">
+                            <ul>
+                                <li>
+                                    <a href="https://www.hud.gov/topics/rental_assistance" target="_blank">
+                                        <i class="fas fa-house-user"></i> Housing Assistance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.shelterlist.com/" target="_blank">
+                                        <i class="fas fa-bed"></i> Shelter Locator
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.habitat.org/" target="_blank">
+                                        <i class="fas fa-hammer"></i> Habitat for Humanity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.covenanthouse.org/" target="_blank">
+                                        <i class="fas fa-hands-helping"></i> Youth Housing Support
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3><i class="fas fa-heartbeat"></i> Healthcare</h3>
+                        </div>
+                        <div class="resource-body">
+                            <ul>
+                                <li>
+                                    <a href="https://www.healthcare.gov/" target="_blank">
+                                        <i class="fas fa-clinic-medical"></i> Affordable Healthcare
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.plannedparenthood.org/" target="_blank">
+                                        <i class="fas fa-hospital"></i> Planned Parenthood
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.mentalhealth.gov/" target="_blank">
+                                        <i class="fas fa-brain"></i> Mental Health Resources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.freeclinics.com/" target="_blank">
+                                        <i class="fas fa-stethoscope"></i> Free Clinics Locator
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        </div>
+                        <div class="resource-body">
+                            <ul>
+                                <li>
+                                    <a href="https://www.khanacademy.org/" target="_blank">
+                                        <i class="fas fa-book-open"></i> Khan Academy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/" target="_blank">
+                                        <i class="fas fa-laptop"></i> Free Online Courses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.scholarships.com/" target="_blank">
+                                        <i class="fas fa-graduation-cap"></i> Scholarship Finder
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://literacyproj.org/" target="_blank">
+                                        <i class="fas fa-book-reader"></i> Adult Literacy Programs
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3><i class="fas fa-briefcase"></i> Employment</h3>
+                        </div>
+                        <div class="resource-body">
+                            <ul>
+                                <li>
+                                    <a href="https://www.careeronestop.org/" target="_blank">
+                                        <i class="fas fa-search"></i> Job Search Resources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.resume.com/" target="_blank">
+                                        <i class="fas fa-file-alt"></i> Free Resume Builder
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.dol.gov/" target="_blank">
+                                        <i class="fas fa-hard-hat"></i> Job Training Programs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.sba.gov/" target="_blank">
+                                        <i class="fas fa-store"></i> Small Business Resources
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-header">
+                            <h3><i class="fas fa-hands-helping"></i> Social Services</h3>
+                        </div>
+                        <div class="resource-body">
+                            <ul>
+                                <li>
+                                    <a href="https://www.benefits.gov/" target="_blank">
+                                        <i class="fas fa-info-circle"></i> Government Benefits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.211.org/" target="_blank">
+                                        <i class="fas fa-phone-alt"></i> 211 Social Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.unitedway.org/" target="_blank">
+                                        <i class="fas fa-hands-helping"></i> United Way
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.salvationarmyusa.org/usn/" target="_blank">
+                                        <i class="fas fa-utensils"></i> Salvation Army Services
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="success-story">
+                    <div class="story-img" style="background-image: url('https://images.unsplash.com/photo-1582212654291-56d0b74231b1?q=80&w=2070');"></div>
+                    <div class="story-content">
+                        <h3>Community Resource Center Success</h3>
+                        <p>"Our community resource center, supported by Pathfinder, now serves over 200 families daily with food, job training, and childcare. It's become the heart of our neighborhood."</p>
+                        <p>- David Chen, Community Leader</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="page">
+            <div class="container">
+                <h2 class="section-title">Community Support Network</h2>
+                <div class="forum-container">
+                    <div class="forum-categories">
+                        <h3><i class="fas fa-list"></i> Discussion Categories</h3>
+                        <ul class="category-list">
+                            <li>Success Stories</li>
+                            <li>Business Advice</li>
+                            <li>Job Opportunities</li>
+                            <li>Skill Sharing</li>
+                            <li>Mentorship</li>
+                            <li>Local Events</li>
+                            <li>Resource Exchange</li>
+                        </ul>
+                        
+                        <div class="result" style="margin-top: 20px; background: var(--dark); color: white;">
+                            <h4>Community Partners</h4>
+                            <a href="https://www.meetup.com/" target="_blank" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+                                <i class="fas fa-calendar-check"></i> Find Local Meetups
+                            </a>
+                            <a href="https://www.mentoring.org/" target="_blank" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">
+                                <i class="fas fa-user-friends"></i> Find a Mentor
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-posts">
+                        <h3><i class="fas fa-comments"></i> Recent Discussions</h3>
+                        
+                        <div class="post">
+                            <div class="post-header">
+                                <div class="avatar">MJ</div>
+                                <div>
+                                    <h4>Maria J.</h4>
+                                    <p>2 hours ago</p>
+                                </div>
+                            </div>
+                            <h4>How I grew my sewing business from nothing</h4>
+                            <p>Three years ago I started with a single sewing machine and a dream. Today I employ 5 people and supply products to 3 local stores...</p>
+                            <a href="#" class="btn btn-secondary" style="margin-top: 15px;">
+                                <i class="fas fa-comment"></i> Join Discussion
+                            </a>
+                        </div>
+                        
+                        <div class="post">
+                            <div class="post-header">
+                                <div class="avatar">KT</div>
+                                <div>
+                                    <h4>Kwame T.</h4>
+                                    <p>5 hours ago</p>
+                                </div>
+                            </div>
+                            <h4>Looking for agricultural training partners</h4>
+                            <p>We're starting a cooperative in the Eastern region and looking for 10 committed individuals to join our sustainable farming program...</p>
+                            <a href="#" class="btn btn-secondary" style="margin-top: 15px;">
+                                <i class="fas fa-comment"></i> Join Discussion
+                            </a>
+                        </div>
+                        
+                        <div class="post">
+                            <div class="post-header">
+                                <div class="avatar">SP</div>
+                                <div>
+                                    <h4>Sara P.</h4>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <h4>Free digital marketing workshop next week</h4>
+                            <p>I'll be hosting a free 3-hour workshop on using social media to grow your business. All are welcome to join!</p>
+                            <a href="#" class="btn btn-secondary" style="margin-top: 15px;">
+                                <i class="fas fa-comment"></i> Join Discussion
+                            </a>
+                        </div>
+                        
+                        <div class="post">
+                            <div class="post-header">
+                                <div class="avatar">AD</div>
+                                <div>
+                                    <h4>Anika D.</h4>
+                                    <p>2 days ago</p>
+                                </div>
+                            </div>
+                            <h4>Free clothing exchange this Saturday</h4>
+                            <p>Bring clothes you no longer need and find something new-to-you! Community center, 10am-2pm.</p>
+                            <a href="#" class="btn btn-secondary" style="margin-top: 15px;">
+                                <i class="fas fa-comment"></i> Join Discussion
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="success-story">
+                    <div class="story-img" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070');"></div>
+                    <div class="story-content">
+                        <h3>Community Transformation</h3>
+                        <p>"Our village was struggling until we formed a community group through Pathfinder. Now we share resources, support local businesses, and have reduced poverty by 45% in just two years."</p>
+                        <p>- Rajiv Patel, Community Organizer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="settings" class="page">
+            <div class="container">
+                <h2 class="section-title">Account Settings</h2>
+                <div class="settings-container">
+                    <div class="settings-card">
+                        <h3><i class="fas fa-user-cog"></i> Profile Settings</h3>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" value="John Doe" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="john@example.com" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" value="+1234567890" class="form-input">
+                        </div>
+                        <button class="btn btn-primary">Update Profile</button>
+                    </div>
+                    
+                    <div class="settings-card">
+                        <h3><i class="fas fa-bell"></i> Notifications</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                            <span>Email Notifications</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider-toggle"></span>
+                            </label>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                            <span>SMS Alerts</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider-toggle"></span>
+                            </label>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                            <span>Training Opportunities</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider-toggle"></span>
+                            </label>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                            <span>Loan Updates</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider-toggle"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-card">
+                        <h3><i class="fas fa-language"></i> Language Preferences</h3>
+                        <select class="language-select">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                            <option>Arabic</option>
+                            <option>Hindi</option>
+                            <option>Portuguese</option>
+                            <option>Swahili</option>
+                            <option>Amharic</option>
+                        </select>
+                    </div>
+                    
+                    <div class="settings-card">
+                        <h3><i class="fas fa-shield-alt"></i> Security</h3>
+                        <button class="btn btn-primary" style="width: 100%; margin-bottom: 15px;">
+                            <i class="fas fa-key"></i> Change Password
+                        </button>
+                        <button class="btn btn-secondary" style="width: 100%;">
+                            <i class="fas fa-lock"></i> Two-Factor Authentication
+                        </button>
+                    </div>
+                    
+                    <div class="settings-card">
+                        <h3><i class="fas fa-mobile-alt"></i> Accessibility</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                            <span>High Contrast Mode</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider-toggle"></span>
+                            </label>
+                        </div>
+                        
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                            <span>Text Size</span>
+                            <select style="width: 120px;" class="form-input">
+                                <option>Normal</option>
+                                <option>Large</option>
+                                <option>Extra Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-card">
+                        <h3><i class="fas fa-download"></i> Export Data</h3>
+                        <p>Download your personal data from Pathfinder</p>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;">
+                            <i class="fas fa-file-export"></i> Export Profile Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Pathfinder</h3>
+                    <p>Creating sustainable pathways out of poverty through education, finance, and community support.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-target="home">Home</a></li>
+                        <li><a href="#" data-target="jobs">Job Training</a></li>
+                        <li><a href="#" data-target="finance">Microfinance</a></li>
+                        <li><a href="#" data-target="resources">Resources</a></li>
+                        <li><a href="#" data-target="community">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.un.org/sustainabledevelopment/poverty/" target="_blank">UN Poverty Reduction</a></li>
+                        <li><a href="https://www.worldbank.org/en/topic/poverty" target="_blank">World Bank Resources</a></li>
+                        <li><a href="https://www.povertyactionlab.org/" target="_blank">Poverty Action Lab</a></li>
+                        <li><a href="https://www.borgenproject.org/" target="_blank">Borgen Project</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Bereketbefekadu75@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +251931231671</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Global Headquarters</li>
+                        <li>
+                            <div style="display: flex; gap: 15px; margin-top: 10px;">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; Poverty Alleviation Platform.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="fab" id="helpFab">
+        <i class="fas fa-hands-helping"></i>
+    </div>
+
+    <div class="modal" id="signInModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="form-title">Sign In to Pathfinder</h2>
+            <form class="auth-form" id="signInForm">
+                <input type="email" placeholder="Email Address" class="form-input" required>
+                <input type="password" placeholder="Password" class="form-input" required>
+                <button type="submit" class="form-submit">Sign In</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <span class="switch-form" id="showRegister">Register</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="form-title">Create an Account</h2>
+            <form class="auth-form" id="registerForm">
+                <input type="text" placeholder="Full Name" class="form-input" required>
+                <input type="email" placeholder="Email Address" class="form-input" required>
+                <input type="password" placeholder="Password" class="form-input" required>
+                <input type="password" placeholder="Confirm Password" class="form-input" required>
+                <button type="submit" class="form-submit">Register</button>
+                <div class="form-footer">
+                    <p>Already have an account? <span class="switch-form" id="showSignIn">Sign In</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
